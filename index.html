@@ -1,49 +1,143 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TastyBlog — Recipe and Food Blog Template</title>
+    <title>Cooks Delight — Lemon Garlic Roasted Chicken</title>
 </head>
 <body>
 
-    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <main id="main-content" class="main-hero">
-        <article class="hero-card" itemscope itemtype="https://schema.org/Recipe">
+    <header>
+        <div class="logo">
+            <strong>Cooks Delight</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Cooking Tips</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button type="button">Search</button>
+            <button type="button">Subscribe</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <article itemscope itemtype="https://schema.org/Recipe">
             
-            <div class="hero-card__content">
-                <header class="hero-card__header">
-                    <span class="badge">FREE</span>
-                    <h1 class="hero-card__title" itemprop="name">
-                        Recipe and food blog template
-                    </h1>
-                </header>
-
-                <p class="hero-card__description" itemprop="description">
-                    Our template offers a customizable design for additional personality!
+            <header class="recipe-hero">
+                <span class="category">Recipe</span>
+                <h1 itemprop="name">Lemon Garlic Roasted Chicken</h1>
+                <p itemprop="description">
+                    Welcome to Cooks Delight! Today, we embark on a journey of flavors with our Citrus Infusion Delight: Lemon Garlic Roasted Chicken.
                 </p>
+                
+                <div class="recipe-meta">
+                    <time itemprop="prepTime" datetime="PT1H">1 HOUR</time>
+                    <span>Hard Prep</span>
+                    <span itemprop="recipeYield">4 Serves</span>
+                </div>
 
-                <footer class="hero-card__footer" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <div class="author-info">
-                        <img src="images/Logo.png" alt="Логотип 88.Design" class="author-avatar">
-                        <a href="https://88.design" class="author-link" itemprop="url">
-                            <span itemprop="name">88.Design</span>
-                        </a>
-                    </div>
-                </footer>
+                <figure>
+                    <img itemprop="image" src="images/hero-chicken.jpg" alt="Lemon Garlic Roasted Chicken on a platter">
+                </figure>
+            </header>
+
+            <div class="recipe-body">
+                <section class="recipe-main-text">
+                    <h2>Masterpiece of Culinary Craftsmanship</h2>
+                    <p>Picture succulent chicken infused with the bright notes of lemon and the aromatic richness of garlic...</p>
+
+                    <h3>Do’s and Don’ts</h3>
+                    <ul>
+                        <li><strong>Clean Hands:</strong> Ensure surfaces are clean to prevent cross-contamination.</li>
+                        <li><strong>Separate Boards:</strong> Dedicate boards for raw chicken.</li>
+                    </ul>
+
+                    <section>
+                        <h2>Instructions</h2>
+                        <ol itemprop="recipeInstructions">
+                            <li>
+                                <strong>Preheat and Prepare:</strong> 
+                                Preheat your oven to 375°F (190°C). Rinse the chicken and pat it dry.
+                            </li>
+                            <li>
+                                <strong>Citrus Infusion:</strong> 
+                                Lift the skin and rub minced garlic directly onto the meat. Place lemon slices under the skin.
+                            </li>
+                            <li>
+                                <strong>Herb Blend:</strong> 
+                                Mix olive oil, thyme, rosemary, salt, and pepper. Brush the entire chicken.
+                            </li>
+                            <li>
+                                <strong>Roast:</strong> 
+                                Roast for approximately 1 hour or until the internal temperature reaches 165°F (74°C).
+                            </li>
+                        </ol>
+                    </section>
+                </section>
+
+                <aside>
+                    <section class="ingredients-box">
+                        <h2>Ingredients</h2>
+                        <ul>
+                            <li itemprop="recipeIngredient">1 whole chicken (about 3-4 pounds)</li>
+                            <li itemprop="recipeIngredient">2 lemons, sliced</li>
+                            <li itemprop="recipeIngredient">6 cloves garlic, minced</li>
+                            <li itemprop="recipeIngredient">2 tablespoons olive oil</li>
+                            <li itemprop="recipeIngredient">1 teaspoon dried thyme</li>
+                            <li itemprop="recipeIngredient">1 teaspoon dried rosemary</li>
+                            <li itemprop="recipeIngredient">Salt and black pepper to taste</li>
+                        </ul>
+                    </section>
+
+                    <section class="nutritional-value">
+                        <h3>Nutritional Value</h3>
+                        <p>Calories: ~250</p>
+                        <p>Protein: ~30g</p>
+                    </aside>
+                </aside>
             </div>
 
-            <figure class="hero-card__image-container">
-                <img itemprop="image" 
-                     src="images/laptop.png" 
-                     alt="Макет блога на экране ноутбука" 
-                     class="hero-card__img">
-                <figcaption class="visually-hidden">Превью шаблона блога</figcaption>
-            </figure>
+            <footer class="recipe-footer">
+                <div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <img src="images/isabella.jpg" alt="Isabella Russo" itemprop="image">
+                    <div>
+                        <span itemprop="name">Isabella Russo</span>
+                        <p>In the world of pots and pans, I'm on a mission to turn every meal into a masterpiece.</p>
+                    </div>
+                </div>
+            </footer>
 
         </article>
+
+        <section class="similar-recipes">
+            <h2>Similar Recipes</h2>
+            <div class="recipe-card">
+                <h3>Savory Herb-Infused Chicken</h3>
+                <p>Indulge in the rich and savory symphony of flavors...</p>
+                <a href="#">View Recipe</a>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <div class="footer-logo">Cooks Delight</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">Cooking Tips</a>
+            <a href="#">About Us</a>
+        </nav>
+        <p class="copyright">Copyright: © 2026 Cooks Delight.</p>
+    </footer>
 
 </body>
 </html>
