@@ -1,52 +1,152 @@
-.main-footer {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    padding: 40px 0;
-    margin-top: 80px;
-}
+/* --- 6. ПОДВАЛ (FOOTER) --- */
 
-.footer-content {
+/* Мобильная версия подвала (по умолчанию) */
+.main-footer.container {
+    background-color: var(--color-dark); 
+    border-radius: 24px; /* Из Figma для мобилки */
+    padding: 0 24px 24px 24px; /* Из Figma для мобилки */
+    margin: 40px auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
+}
+
+.footer-wrapper {
+    width: 100%;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(240, 235, 225, 0.24); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* На мобилке центрируем логотип и соцсети */
+    gap: 24px;
 }
 
 .logo-footer {
-    font-family: var(--font-header);
-    font-size: 24px;
-    font-weight: var(--fw-h1);
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
+.footer-logo-icon {
+    width: 40px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.logo-footer span {
+    color: var(--color-background); 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Навигация: на мобилках в столбик с линиями внизу */
 .footer-nav {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем по левому краю, как в макете */
+    width: 100%;
+    gap: 0; /* Отступы зададим через padding в ссылках */
 }
 
 .footer-nav a {
-    color: var(--color-light);
-    font-size: var(--fs-tagline);
+    color: var(--color-background);
+    font-size: 14px;
+    font-weight: 500;
     text-transform: uppercase;
-    opacity: 0.8;
+    line-height: 1;
+    width: 100%; /* Чтобы линия под ссылкой растягивалась на всю ширину */
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(240, 235, 225, 0.24); /* Горизонтальная линия */
+    transition: var(--transition, 0.3s ease);
+}
+
+/* У последней ссылки убираем нижнюю линию и отступ, как в Figma */
+.footer-nav a:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .footer-nav a:hover {
-    opacity: 1;
     color: var(--color-primary-2);
 }
 
-.copyright {
-    font-size: var(--fs-small);
-    opacity: 0.6;
+/* Прячем десктопные вертикальные разделители на мобилках */
+.nav-separator {
+    display: none; 
 }
 
-/* Десктопная раскладка подвала */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 16px;
+}
+
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: var(--transition, 0.3s ease);
+    filter: brightness(0) invert(1); /* Делаем иконки белыми, если они черные */
+}
+
+.footer-socials a:hover img {
+    filter: brightness(0) invert(0.8);
+}
+
+.copyright {
+    color: rgba(240, 235, 225, 0.60);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+    margin: 0;
+    text-align: center;
+}
+
+/* --- АДАПТИВНОСТЬ ПОД ДЕСКТОП (1024px+) --- */
 @media (min-width: 1024px) {
-    .footer-content {
-        flex-direction: row;
+    .main-footer.container {
+        border-radius: 32px;
+        padding: 0 40px 24px 40px; 
+    }
+
+    .footer-wrapper {
+        flex-direction: row; 
         justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(240, 235, 225, 0.08); /* Линия тоньше на десктопе */
+    }
+    
+    .footer-nav {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        gap: 16px;
+    }
+
+    /* Возвращаем ссылкам обычный вид без горизонтальных линий */
+    .footer-nav a {
+        width: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    
+    /* Возвращаем вертикальные разделители */
+    .nav-separator {
+        display: block;
+        width: 1px;
+        height: 16px;
+        background-color: rgba(240, 235, 225, 0.08);
+    }
+
+    .footer-socials {
+        width: auto;
     }
 }

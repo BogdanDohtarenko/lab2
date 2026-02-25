@@ -41,8 +41,8 @@
             <div class="hero-content">
                 <h1>Welcome to my Culinary Haven!</h1>
                 <div class="hero-description">
-                    <p>Bonjour and welcome to the heart of my kitchen! I'm Isabella Russo, the culinary enthusiast behind this haven of flavors, Cooks Delight.</p>
-                    <button class="cta-button">Explore Recipes</button>
+                <p>Bonjour and <span class="highlight-welcome">WELCOME</span> to the heart of my kitchen! I'm Isabella Russo, the culinary enthusiast behind this haven of flavors, Cooks Delight. Join me on a gastronomic journey where each dish carries a story, and every recipe is a crafted symphony of taste.</p>
+                <button class="cta-button">Explore Recipes</button>
                 </div>
             </div>
         </section>
@@ -52,14 +52,20 @@
                 <aside class="author-card">
                     <img src="images/Author.png" alt="Isabella Russo">
                     <div class="social-follow">
-                        <span>Follow me</span>
-                        <div class="icons">...</div>
+                    <span>Follow me</span>
+                        <div class="icons">
+                            <a href="#"><img src="images/facebook.png" alt="FB"></a>
+                            <a href="#"><img src="images/instagram.png" alt="IG"></a>
+                            <a href="#"><img src="images/youtube.png" alt="YT"></a>
+                        </div>
                     </div>
                 </aside>
                 <article class="biography">
                     <h2>From Italian Roots to Global Palates</h2>
-                    <p>Born and raised in Italy, my journey began in the heart of my family's kitchen...</p>
-                    <p>Driven by relentless curiosity, I embarked on a global culinary exploration...</p>
+                    <p>Born and raised in the vibrant culinary landscape of Italy, my journey with food began in the heart of my family's kitchen. Surrounded by the aroma of fresh herbs, the sizzle of pans, and the laughter of loved ones, I developed a deep appreciation for the art of cooking. My culinary education took me from the historic streets of Rome to the bustling markets of Florence, where I honed my skills and cultivated a love for the simplicity and authenticity of Italian cuisine.</p>
+                    <p>Driven by a relentless curiosity, I embarked on a global culinary exploration, seeking inspiration from the rich tapestry of flavors found in kitchens around the world. From the spicy markets of Marrakech to the sushi stalls of Tokyo, each experience added a unique brushstroke to my culinary canvas.</p>
+                    <p>Whether you're a seasoned home cook or just starting your culinary adventure, I'm delighted to have you here. Let's stir, simmer, and savor the beauty of creating something wonderful together.</p>
+                    <p>Warmest regards,</p>
                     <p class="signature">Isabella Russo</p>
                 </article>
             </div>
@@ -76,75 +82,101 @@
         </div>
 
         <section class="featured-recipes container">
-            <h2>Featured Recipes</h2>
-            <div class="recipe-grid">
+    <div class="featured-header">
+        <h2>Featured Recipes</h2>
+        <div class="slider-controls">
+            <div class="arrow-btn" aria-label="Previous"><img src="images/ArrowLeft.png" alt="ArrowLeft"></div>
+            <div class="arrow-btn" aria-label="Next"><img src="images/ArrowRight.png" alt="ArrowRight"></div>
+        </div>
+    </div>
+
+    <div class="recipe-grid">
+        <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+            <img itemprop="image" src="images/lemonChicken.png" alt="Herb Chicken">
+            <div class="recipe-info">
+                <div class="recipe-copy">
+                    <h3 itemprop="name">Savory Herb-Infused Chicken</h3>
+                    <p itemprop="description">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken.</p>
+                </div>
                 
-                <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
-                    <img itemprop="image" src="images/lemonChicken.png" alt="Herb Chicken">
-                    <div class="recipe-info">
-                        <h3 itemprop="name">Savory Herb-Infused Chicken</h3>
-                        <p itemprop="description">Indulge in a rich symphony of flavors.</p>
-                        
-                        <ul class="hidden-data">
-                            <li itemprop="recipeIngredient">1 whole chicken</li>
-                            <li itemprop="recipeIngredient">Fresh rosemary and thyme</li>
-                            <li itemprop="recipeInstructions">Preheat oven to 180°C. Season chicken. Roast for 40 minutes.</li>
-                        </ul>
+                <ul class="hidden-data">
+                    <li itemprop="recipeIngredient">1 whole chicken</li>
+                    <li itemprop="recipeInstructions">Preheat oven to 180°C. Season chicken. Roast for 40 minutes.</li>
+                </ul>
 
-                        <div class="recipe-meta">
-                            <span>40 Min - Easy Prep - 3 Serves</span>
-                            <a href="#" class="view-recipe">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
-                    <img itemprop="image" src="images/mosse.png" alt="Chocolate Mousse">
-                    <div class="recipe-info">
-                        <h3 itemprop="name">Decadent Chocolate Mousse</h3>
-                        <p itemprop="description">Velvety indulgence that transcends sweetness.</p>
-                        
-                        <ul class="hidden-data">
-                            <li itemprop="recipeIngredient">Dark chocolate</li>
-                            <li itemprop="recipeIngredient">Heavy cream</li>
-                            <li itemprop="recipeInstructions">Melt chocolate. Whip cream. Fold together and chill for 2 hours.</li>
-                        </ul>
-
-                        <div class="recipe-meta">
-                            <span>30 Min - Medium - 4 Serves</span>
-                            <a href="#" class="view-recipe">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
-
+                <div class="recipe-meta">
+                    <span>40 Min - easy prep - 3 serves</span>
+                    <a href="#" class="view-recipe">View Recipe</a>
+                </div>
             </div>
-        </section>
+        </article>
+
+        <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+            <div class="image-wrapper">
+                <img itemprop="image" src="images/mosse.png" alt="Chocolate Mousse">
+                <div class="vegan-tag">Vegan</div> </div>
+            <div class="recipe-info">
+                <div class="recipe-copy">
+                    <h3 itemprop="name">Decadent Chocolate Mousse</h3>
+                    <p itemprop="description">Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>
+                </div>
+                
+                <ul class="hidden-data">
+                    <li itemprop="recipeIngredient">Dark chocolate</li>
+                    <li itemprop="recipeInstructions">Melt chocolate. Whip cream. Fold together and chill for 2 hours.</li>
+                </ul>
+
+                <div class="recipe-meta">
+                    <span>30 Min - medium prep - 4 serves</span>
+                    <a href="#" class="view-recipe">View Recipe</a>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
 
         <section class="cta-box container">
-            <div class="cta-content">
-                <span>Subscribe</span>
-                <h2>Join the fun!</h2>
-                <p>Get weekly recipes straight to your inbox.</p>
-                <form class="subscribe-form">
-                    <input type="email" placeholder="Email Address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </section>
+    <div class="bg-shape shape-top"></div>
+    <div class="bg-shape shape-bottom"></div>
+
+    <div class="cta-content">
+        <span class="cta-subtitle">subscribe</span>
+        <h2>Join the fun<br>Subscribe now!</h2>
+        <p>Subscribe to our newsletter for a weekly serving of recipes, cooking tips, and exclusive insights straight to your inbox.</p>
+        
+        <form class="subscribe-form">
+            <input type="email" placeholder="Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <div class="logo-footer">Cooks Delight</div>
-            <nav class="footer-nav">
-                <a href="#">Home</a>
-                <a href="#">Recipes</a>
-                <a href="#">Tips</a>
-                <a href="#">About</a>
-            </nav>
-            <p class="copyright">© 2024 Cooks Delight.</p>
+    <footer class="main-footer container">
+    <div class="footer-wrapper">
+        <div class="logo-footer">
+            <img src="images/logo.png" alt="Logo" class="footer-logo-icon"> <span>Cooks<br>Delight</span>
         </div>
-    </footer>
+
+        <nav class="footer-nav">
+            <a href="#">Home</a>
+            <span class="nav-separator"></span>
+            <a href="#">Recipes</a>
+            <span class="nav-separator"></span>
+            <a href="#">Cooking Tips</a>
+            <span class="nav-separator"></span>
+            <a href="#">About Us</a>
+        </nav>
+
+        <div class="footer-socials">
+            <a href="#"><img src="images/facebook.png" alt="FB"></a>
+            <a href="#"><img src="images/instagram.png" alt="IG"></a>
+            <a href="#"><img src="images/youtube.png" alt="YT"></a>
+        </div>
+    </div>
+
+    <p class="copyright">Copyright: © 2024 Cooks Delight.</p>
+</footer>
 
 </body>
 </html>
