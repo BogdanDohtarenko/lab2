@@ -1,0 +1,78 @@
+@import 'variables.css';
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+/* 2. БАЗОВЫЕ СБРОСЫ (Reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    line-height: var(--lh-p);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 3. ГЛОБАЛЬНЫЕ КЛАССЫ (Layout) */
+.container {
+    max-width: var(--container-width, 1200px); /* Добавил фоллбэк на всякий случай */
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.hidden-data {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition, 0.3s ease);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: var(--transition, 0.3s ease);
+}
+
+/* 4. КОРРЕКЦИЯ ДЛЯ СЕКЦИИ ABOUT */
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.signature {
+    font-family: var(--font-signature);
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    .about-grid {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+    
+    .author-card {
+        flex: 0 0 400px; 
+    }
+}

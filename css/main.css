@@ -1,0 +1,177 @@
+/* --- 1. HERO SECTION (Приветствие) --- */
+.hero {
+    padding: 60px 0;
+    text-align: center; /* На мобилках лучше по центру */
+}
+
+.hero h1 {
+    font-family: var(--font-header);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-h1);
+    line-height: var(--lh-h1-h2);
+    letter-spacing: var(--ls-h1);
+    text-transform: uppercase;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+
+.hero-description p {
+    font-family: var(--font-body);
+    font-size: var(--fs-p1);
+    color: var(--color-dark);
+    margin-bottom: 30px;
+}
+
+/* Кнопка Explore Recipes */
+.cta-button {
+    background-color: var(--color-primary-2);
+    color: var(--color-light);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-family: var(--font-header);
+    font-weight: var(--fw-h2-h3);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/* --- 2. GRID ФОТОГРАФИЙ (Шаг 7 задания) --- */
+/* Добавь этот класс в HTML вокруг твоих 8 картинок, если его нет */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на мобилках */
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Делаем фото квадратными как в макете */
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+/* --- 3. FEATURED RECIPES (Карточки) --- */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Одна карточка в ряд на мобилке */
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.recipe-card {
+    background: var(--color-light);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.recipe-info {
+    padding: 20px;
+}
+
+.recipe-info h3 {
+    font-family: var(--font-header);
+    font-size: var(--fs-h3);
+    margin-bottom: 10px;
+}
+
+/* Секция подписки */
+.cta-box {
+    background-color: var(--color-primary-3);
+    border-radius: 20px;
+    padding: 60px 20px;
+    margin: 60px auto;
+    text-align: center;
+    color: var(--color-light);
+}
+
+.cta-content h2 {
+    font-family: var(--font-header);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-h1);
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+}
+
+.cta-content span {
+    font-family: var(--font-header);
+    font-size: var(--fs-subtitle);
+    text-transform: uppercase;
+    font-weight: var(--fw-subtitle);
+}
+
+/* Форма подписки */
+.subscribe-form {
+    display: flex;
+    flex-direction: column; /* На мобилках в колонку */
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+.subscribe-form input {
+    padding: 16px 25px;
+    border-radius: 50px;
+    border: none;
+    font-family: var(--font-body);
+    font-size: var(--fs-p2);
+    width: 100%;
+}
+
+.subscribe-form button {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-family: var(--font-header);
+    font-weight: var(--fw-h2-h3);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.subscribe-form button:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* Адаптив для десктопа: инпут и кнопка в одну строку */
+@media (min-width: 768px) {
+    .subscribe-form {
+        flex-direction: row;
+        background: var(--color-white);
+        border-radius: 50px;
+        padding: 5px;
+    }
+    
+    .subscribe-form input {
+        background: transparent;
+    }
+    
+    .subscribe-form button {
+        width: auto;
+    }
+}
+
+/* --- 4. АДАПТИВНОСТЬ ПОД ДЕСКТОП (1024px+) --- */
+@media (min-width: 1024px) {
+    .hero {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки на десктопе */
+        gap: 20px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 карточки в ряд */
+    }
+}

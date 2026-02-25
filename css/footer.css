@@ -1,0 +1,52 @@
+.main-footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-footer {
+    font-family: var(--font-header);
+    font-size: 24px;
+    font-weight: var(--fw-h1);
+    text-transform: uppercase;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: var(--color-light);
+    font-size: var(--fs-tagline);
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    color: var(--color-primary-2);
+}
+
+.copyright {
+    font-size: var(--fs-small);
+    opacity: 0.6;
+}
+
+/* Десктопная раскладка подвала */
+@media (min-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

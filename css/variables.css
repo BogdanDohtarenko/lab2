@@ -34,6 +34,7 @@
     --fw-p2: 300; 
 }
 
+
 @media (min-width: 1024px) {
     :root {
             --fs-h1: 80px;
