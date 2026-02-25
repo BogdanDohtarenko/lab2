@@ -1,0 +1,47 @@
+:root {
+    --color-dark: #262522;           
+    --color-primary-1: #9FDC26;    
+    --color-primary-2: #F29C33; 
+    --color-primary-3: #EE6352;   
+    --color-primary-4: #C4E5FC;  
+    --color-background: #F0EBE1;   
+    --color-light: #FFFBF2;
+
+    --font-header: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-signature: 'Homemade Apple', cursive;   
+
+    --fs-h1: 38px;
+    --fs-h2: 26px;
+    --fs-h3: 21px;
+    --fs-subtitle: 16px;
+    --fs-tagline: 16px;
+    --fs-p1: 16px;
+    --fs-p2: 14px;
+
+    --lh-h1-h2: 100%;
+    --lh-h3: 120%;
+    --lh-p: 140%;      
+
+    --ls-h1: -0.01em;
+    --ls-h2: 0.01em;
+
+    --fw-h1: 800;        
+    --fw-h2-h3: 700;    
+    --fw-subtitle: 600;
+    --fw-tagline: 500;
+    --fw-p1: 400;
+    --fw-p2: 300; 
+}
+
+@media (min-width: 1024px) {
+    :root {
+            --fs-h1: 80px;
+            --fs-h2: 40px;
+            --fs-h3: 24px;
+            --fs-subtitle: 18px;
+            --fs-tagline: 18px;
+            --fs-p1: 21px;
+            --fs-p2: 16px;
+        }
+    }
