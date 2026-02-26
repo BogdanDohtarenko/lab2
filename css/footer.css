@@ -1,10 +1,7 @@
-/* --- 6. ПОДВАЛ (FOOTER) --- */
-
-/* Мобильная версия подвала (по умолчанию) */
 .main-footer.container {
     background-color: var(--color-dark); 
-    border-radius: 24px; /* Из Figma для мобилки */
-    padding: 0 24px 24px 24px; /* Из Figma для мобилки */
+    border-radius: 24px;
+    padding: 0 24px 24px 24px; 
     margin: 40px auto; 
     display: flex;
     flex-direction: column;
@@ -18,12 +15,12 @@
     border-bottom: 1px solid rgba(240, 235, 225, 0.24); 
     display: flex;
     flex-direction: column;
-    align-items: center; /* На мобилке центрируем логотип и соцсети */
+    align-items: center; 
     gap: 24px;
 }
 
 .logo-footer {
-    display: flex;
+    display: 2;
     align-items: center;
     gap: 8px;
 }
@@ -41,13 +38,12 @@
     line-height: 1;
 }
 
-/* Навигация: на мобилках в столбик с линиями внизу */
 .footer-nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравниваем по левому краю, как в макете */
+    align-items: flex-start;
     width: 100%;
-    gap: 0; /* Отступы зададим через padding в ссылках */
+    gap: 0; 
 }
 
 .footer-nav a {
@@ -56,14 +52,13 @@
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1;
-    width: 100%; /* Чтобы линия под ссылкой растягивалась на всю ширину */
+    width: 100%; 
     padding-bottom: 12px;
     margin-bottom: 12px;
-    border-bottom: 1px solid rgba(240, 235, 225, 0.24); /* Горизонтальная линия */
+    border-bottom: 1px solid rgba(240, 235, 225, 0.24); 
     transition: var(--transition, 0.3s ease);
 }
 
-/* У последней ссылки убираем нижнюю линию и отступ, как в Figma */
 .footer-nav a:last-of-type {
     border-bottom: none;
     margin-bottom: 0;
@@ -74,7 +69,6 @@
     color: var(--color-primary-2);
 }
 
-/* Прячем десктопные вертикальные разделители на мобилках */
 .nav-separator {
     display: none; 
 }
@@ -92,7 +86,7 @@
     height: 24px;
     object-fit: contain;
     transition: var(--transition, 0.3s ease);
-    filter: brightness(0) invert(1); /* Делаем иконки белыми, если они черные */
+    filter: brightness(0) invert(1); 
 }
 
 .footer-socials a:hover img {
@@ -109,7 +103,6 @@
     text-align: center;
 }
 
-/* --- АДАПТИВНОСТЬ ПОД ДЕСКТОП (1024px+) --- */
 @media (min-width: 1024px) {
     .main-footer.container {
         border-radius: 32px;
@@ -120,7 +113,7 @@
         flex-direction: row; 
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgba(240, 235, 225, 0.08); /* Линия тоньше на десктопе */
+        border-bottom: 1px solid rgba(240, 235, 225, 0.08); 
     }
     
     .footer-nav {
@@ -130,7 +123,6 @@
         gap: 16px;
     }
 
-    /* Возвращаем ссылкам обычный вид без горизонтальных линий */
     .footer-nav a {
         width: auto;
         padding-bottom: 0;
@@ -138,7 +130,6 @@
         border-bottom: none;
     }
     
-    /* Возвращаем вертикальные разделители */
     .nav-separator {
         display: block;
         width: 1px;

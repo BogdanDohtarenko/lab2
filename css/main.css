@@ -1,4 +1,3 @@
-/* --- 1. HERO SECTION (Приветствие) --- */
 .hero {
     padding: 60px 0;
     text-align: center; 
@@ -48,7 +47,6 @@
     cursor: pointer;
 }
 
-/* Десктопная версия для Hero-секции */
 @media (min-width: 1024px) {
     .hero-content {
         display: flex;
@@ -69,8 +67,6 @@
     }
 }
 
-
-/* --- 2. СЕКЦИЯ ABOUT (Biography & Socials) --- */
 .biography p {
     margin-bottom: 20px; 
     font-size: var(--fs-p2); 
@@ -99,7 +95,7 @@
 .social-follow span {
     font-family: var(--font-header);
     font-size: 12px;
-    font-weight: var(--fw-h2-h3); /* Исправлено: добавлено var() */
+    font-weight: var(--fw-h2-h3); 
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -120,12 +116,10 @@
     opacity: 0.6; 
 }
 
-
-/* --- 3. GRID ФОТОГРАФИЙ --- */
 .photo-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Одна картинка в ряд на мобилках */
-    gap: 16px; /* Чуть увеличим отступ, чтобы картинки не слипались */
+    grid-template-columns: 1fr; 
+    gap: 16px; 
     margin: 40px 0;
 }
 
@@ -136,15 +130,13 @@
     border-radius: 20px;
 }
 
-/* Десктопная версия останется прежней */
 @media (min-width: 1024px) {
     .photo-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 колонки на компьютере */
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
 }
 
-/* --- 4. FEATURED RECIPES (Карточки) --- */
 .featured-recipes.container {
     background-color: var(--color-background); 
     border: 1px solid rgba(38, 37, 34, 0.24);
@@ -285,14 +277,10 @@
     z-index: 2; 
 }
 
-
-/* --- 5. СЕКЦИЯ ПОДПИСКИ (CTA) --- */
-
-/* Мобильная версия (по умолчанию) */
 .cta-box.container {
     position: relative;
-    background-color: var(--color-primary-3); /* #EE6352 */
-    border-radius: 24px; /* На мобилке 24px */
+    background-color: var(--color-primary-3);
+    border-radius: 24px; 
     padding: 64px 16px; 
     margin: 40px auto;
     text-align: center;
@@ -301,27 +289,25 @@
     justify-content: center;
 }
 
-/* Фоновые декоративные круги (мобильные размеры) */
 .bg-shape {
     position: absolute;
     background-color: #FF6653; 
     border-radius: 50%;
-    width: 571px; /* Уменьшили для мобилки */
-    height: 389px;
+    width: 570px; 
+    height: 390px;
     z-index: 0;
     left: 50%;
     transform: translateX(-50%); 
 }
 
 .shape-top {
-    top: -146px; /* Координаты из мобильного макета */
+    top: -146px; 
 }
 
 .shape-bottom {
-    top: 251px;
+    top: 250px;
 }
 
-/* Контент поверх фона */
 .cta-content {
     position: relative;
     z-index: 1; 
@@ -334,7 +320,7 @@
 
 .cta-subtitle {
     font-family: var(--font-body);
-    font-size: 16px; /* Мобильный размер */
+    font-size: 16px; 
     font-weight: 500;
     text-transform: uppercase;
     color: rgba(255, 251, 242, 0.80);
@@ -342,39 +328,38 @@
 
 .cta-content h2 {
     font-family: var(--font-header);
-    font-size: 38px; /* Мобильный размер */
+    font-size: 38px; 
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1;
-    color: var(--color-background); /* #F0EBE1 */
+    color: var(--color-background); 
     margin: 0;
 }
 
 .cta-content p {
     font-family: var(--font-body);
-    font-size: 16px; /* Мобильный размер */
+    font-size: 16px; 
     font-weight: 400;
     line-height: 1.4;
-    color: rgba(255, 251, 242, 0.80); /* Слегка прозрачный на мобилке */
+    color: rgba(255, 251, 242, 0.80); 
     max-width: 648px;
-    margin: 0 0 36px 0; /* Отступ до формы (48px - 12px gap) */
+    margin: 0 0 36px 0; 
     letter-spacing: 0.16px;
 }
 
-/* Форма: на мобилках это 2 отдельных блока */
 .subscribe-form {
     position: relative;
     display: flex;
-    flex-direction: column; /* Элементы друг под другом */
+    flex-direction: column; 
     width: 100%;
     max-width: 426px; 
-    gap: 8px; /* Отступ между инпутом и кнопкой */
+    gap: 8px; 
 }
 
 .subscribe-form input {
     width: 100%;
-    height: 50px; /* Фиксированная высота из макета */
-    background-color: var(--color-background); /* #F0EBE1 */
+    height: 50px;
+    background-color: var(--color-background); 
     border: none;
     border-radius: 24px;
     padding: 12px 24px;
@@ -389,7 +374,7 @@
 }
 
 .subscribe-form button {
-    width: 100%; /* Кнопка на всю ширину */
+    width: 100%; 
     height: 50px;
     background-color: var(--color-dark); 
     color: var(--color-background); 
@@ -407,10 +392,8 @@
     background-color: var(--color-primary-2);
 }
 
-/* --- АДАПТИВНОСТЬ ПОД ДЕСКТОП (1024px+) --- */
-
 .main-footer.container {
-    background-color: var(--color-dark); /* #262522 */
+    background-color: var(--color-dark); 
     border-radius: 32px;
     padding: 0 40px 24px 40px; 
     margin: 40px auto; 
@@ -420,23 +403,21 @@
     gap: 15px;
 }
 
-/* Верхняя часть подвала (Лого + Меню + Соцсети) */
 .footer-wrapper {
     width: 100%;
     padding: 24px 0;
-    border-bottom: 1px solid rgba(240, 235, 225, 0.08); /* Тонкая линия разделения из макета */
+    border-bottom: 1px solid rgba(240, 235, 225, 0.08); 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-/* Логотип в подвале */
 .logo-footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    width: 180px; /* Ширина из макета */
+    width: 180px; 
 }
 
 .footer-logo-icon {
@@ -446,17 +427,16 @@
 }
 
 .logo-footer span {
-    color: var(--color-background); /* #F0EBE1 */
+    color: var(--color-background); 
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
 }
 
-/* Навигация в подвале */
 .footer-nav {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Чтобы на мобилках ссылки переносились, если не влезут */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 16px;
 }
@@ -474,14 +454,12 @@
     color: var(--color-primary-2);
 }
 
-/* Вертикальные черточки между ссылками */
 .nav-separator {
     width: 1px;
     height: 16px;
-    background-color: rgba(240, 235, 225, 0.08); /* Цвет из макета */
+    background-color: rgba(240, 235, 225, 0.08); 
 }
 
-/* Соцсети в подвале */
 .footer-socials {
     display: flex;
     align-items: center;
@@ -500,7 +478,6 @@
     opacity: 0.6;
 }
 
-/* Нижняя часть подвала (Копирайт) */
 .copyright {
     color: rgba(240, 235, 225, 0.60);
     font-size: 12px;
@@ -511,10 +488,9 @@
     text-align: center;
 }
 
-/* Десктопная версия подвала */
 @media (min-width: 1024px) {
     .footer-wrapper {
-        flex-direction: row; /* Выстраиваем всё в одну линию */
+        flex-direction: row; 
         justify-content: space-between;
     }
     
@@ -523,17 +499,15 @@
     }
 }
 
-/* Десктопные размеры текста */
 @media (min-width: 1024px) {
     .cta-content h2 {
-        font-size: 80px; /* Громадный заголовок из макета */
+        font-size: 80px; 
     }
     .cta-content p {
         font-size: 21px; 
     }
 }
 
-/* Десктопная версия для формы подписки */
 @media (min-width: 1024px) {
     .cta-box.container {
         border-radius: 32px;
@@ -541,7 +515,6 @@
         margin: 60px auto;
     }
 
-    /* Возвращаем большие круги */
     .bg-shape {
         width: 1328px;
         height: 772px;
@@ -549,7 +522,6 @@
     .shape-top { top: -512px; }
     .shape-bottom { top: 276px; }
 
-    /* Возвращаем большие шрифты */
     .cta-subtitle { font-size: 18px; }
     .cta-content h2 { font-size: 80px; }
     .cta-content p { 
@@ -557,24 +529,23 @@
         color: var(--color-light); 
     }
 
-    /* Возвращаем форму в виде единой "пилюли" */
     .subscribe-form {
-        flex-direction: row; /* Элементы в строку */
-        background-color: var(--color-background); /* Общий светлый фон */
+        flex-direction: row;
+        background-color: var(--color-background);
         border-radius: 50px;
-        padding: 6px; /* Внутренний отступ до кнопки */
+        padding: 6px;
         gap: 0;
     }
     
     .subscribe-form input {
-        background-color: transparent; /* Убираем фон у самого инпута */
-        flex-grow: 1; /* Инпут занимает все свободное место */
+        background-color: transparent;
+        flex-grow: 1; 
         height: auto;
         font-size: 21px;
     }
     
     .subscribe-form button {
-        width: auto; /* Кнопка сжимается под размер текста */
+        width: auto; 
         height: auto;
         padding: 12px 24px;
         border-radius: 50px;
