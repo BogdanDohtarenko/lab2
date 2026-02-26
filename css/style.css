@@ -3,7 +3,6 @@
 @import 'main.css';
 @import 'footer.css';
 
-/* 2. БАЗОВЫЕ СБРОСЫ (Reset) */
 * {
     margin: 0;
     padding: 0;
@@ -22,9 +21,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* 3. ГЛОБАЛЬНЫЕ КЛАССЫ (Layout) */
 .container {
-    max-width: var(--container-width, 1200px); /* Добавил фоллбэк на всякий случай */
+    max-width: var(--container-width, 1200px); 
     margin: 0 auto;
     padding: 0 20px; 
 }
@@ -52,7 +50,6 @@ button {
     transition: var(--transition, 0.3s ease);
 }
 
-/* 4. КОРРЕКЦИЯ ДЛЯ СЕКЦИИ ABOUT */
 .about-grid {
     display: flex;
     flex-direction: column;
