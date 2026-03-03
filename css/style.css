@@ -2,6 +2,7 @@
 @import 'header.css';
 @import 'main.css';
 @import 'footer.css';
+@import 'recipe.css';
 
 * {
     margin: 0;

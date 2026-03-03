@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Herbal-Infused Chicken | Cooks Delight</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500&family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container nav-bar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-icon" title="logo">
+                 <strong>Cooks<br>Delight</strong>
+            </div>
+            <button class="burger-menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Recipes</a></li>
+                <li><a href="#">Cooking Tips</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container recipe-details-page">
+
+        <div class="recipe-switcher-tabs">
+            <button class="recipe-tab-btn active" data-target="recipe-chicken">Herbal-Infused Chicken</button>
+            <button class="recipe-tab-btn" data-target="recipe-mousse">Chocolate Mousse</button>
+        </div>
+<article id="recipe-chicken" class="recipe-pane active">
+                <div class="recipe-main-image">
+                    <img src="images/lemonChicken.png" alt="Savory Herbal-Infused Chicken">
+                </div>
+                <h1>Savory Herbal-Infused Chicken</h1>
+                <div class="recipe-content">
+                    <h3>What you need:</h3>
+                    <ul>
+                        <li>1 whole chicken</li>
+                        <li>Fresh herbs (rosemary, thyme)</li>
+                        <li>Olive oil, salt, pepper</li>
+                    </ul>
+                    <h3>Step by step:</h3>
+                    <p>Preheat oven to 180°C. Season chicken. Roast for 40 minutes.</p>
+                </div>
+            </article>
+
+            <article id="recipe-mousse" class="recipe-pane">
+                <div class="recipe-main-image">
+                    <img src="images/muss.jpg" alt="Decadent Chocolate Mousse">
+                </div>
+                <h1>Decadent Chocolate Mousse</h1>
+                <div class="recipe-content">
+                    <h3>What you need:</h3>
+                    <ul>
+                        <li>200g Dark chocolate</li>
+                        <li>1 cup Heavy cream</li>
+                        <li>3 Eggs</li>
+                        <li>50g Sugar</li>
+                    </ul>
+                    <h3>Step by step:</h3>
+                    <p>Melt chocolate. Whip cream. Fold together and chill for 2 hours.</p>
+                </div>
+            </article>
+
+        <section class="recipe-timer-section">
+            <h2>Cooking Timer</h2>
+            <div class="timer-display" id="timer-display">00:00</div>
+            <div class="timer-controls">
+                <button id="start-timer" class="cta-button">Start 40 Min Timer</button>
+                <button id="reset-timer" class="cta-button" style="background-color: #ccc;">Reset</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="recipe-comments-section">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form" class="comment-form">
+                <input type="text" id="comment-author" placeholder="Your Name" required>
+                <textarea id="comment-text" placeholder="Share your thoughts about this recipe..." required></textarea>
+                <button type="submit" class="cta-button">Post Comment</button>
+            </form>
+
+            <div class="comments-list" id="comments-list">
+                <h3>Comments:</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer container">
+        <div class="footer-wrapper">
+            <div class="logo-footer">
+                <img src="images/logo.png" alt="Logo" class="footer-logo-icon"> <span>Cooks<br>Delight</span>
+            </div>
+            <p class="copyright">Copyright: &copy; 2026 Cooks Delight.</p>
+        </div>
+    </footer>
+
+    <script src="js/recipeScript.js"></script>
+</body>
+</html>
