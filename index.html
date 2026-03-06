@@ -30,9 +30,14 @@
             </ul>
 
             <div class="nav-controls">
-                <button class="search-btn" aria-label="Search"><img src="images/Search.png" alt="search"></button>
+            <form action="search.html" method="GET" style="display: flex; align-items: center; gap: 10px;">
+            <input type="text" name="q" placeholder="Find a recipe..." required style="padding: 5px 10px; border-radius: 20px; border: 1px solid #ccc; outline: none;">
+            <button type="submit" class="search-btn" aria-label="Search" style="background: none; border: none; cursor: pointer;">
+                <img src="images/Search.png" alt="search">
+            </button>
+            </form>
                 <button class="subscribe-btn-small">Subscribe</button>
-            </div>
+            </div>  
         </nav>
     </header>
 

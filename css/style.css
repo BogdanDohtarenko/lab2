@@ -3,6 +3,7 @@
 @import 'main.css';
 @import 'footer.css';
 @import 'recipe.css';
+@import 'styleSearch.css';
 
 * {
     margin: 0;
